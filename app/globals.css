@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@custom-variant standalone (@media (display-mode: standalone));
+
+@theme {
+  --color-ink: #14151f;
+  --color-card: #1d1f2e;
+  --color-edge: #2e3147;
+  --color-sand: #f3efe6;
+  --color-haze: #8c90a8;
+  --color-sun: #ffb454;
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-fraunces);
+}
+
+html {
+  background: #14151f;
+  color-scheme: dark;
+}
+
+body {
+  background: #14151f;
+  color: #f3efe6;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
